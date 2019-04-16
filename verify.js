@@ -12,7 +12,8 @@ const doc = fs.readFileSync('sample-doc.txt');
 
 // Signing
 const verifier = crypto.createVerify('RSA-SHA256');
-verifier.update(doc);
+verifier.write(doc);
+verifier.end();
 
 // Verify file signature ( support formats 'binary', 'hex' or 'base64')
 const result = verifier.verify(public_key, signature, 'base64');

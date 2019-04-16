@@ -4,5 +4,8 @@
   "description": "Sample usage of crypto for document signing",
   "main": "sign.js",
   "author": "Nuwan Attanayake <its4nuwan@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "qrcode": "^1.3.3"
+  }
 }
