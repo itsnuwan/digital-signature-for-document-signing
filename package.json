@@ -1,0 +1,8 @@
+{
+  "name": "digital-signature-for-documents",
+  "version": "1.0.0",
+  "description": "Sample usage of crypto for document signing",
+  "main": "sign.js",
+  "author": "Nuwan Attanayake <its4nuwan@gmail.com>",
+  "license": "MIT"
+}
