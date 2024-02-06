@@ -1,10 +1,5 @@
-### Create your own provate key with following command
+### Create your key pair (public, private) by running following command
 ```
-openssl genpkey -algorithm RSA -pkeyopt rsa_keygen_bits:4096 -pkeyopt rsa_keygen_pubexp:3 -out privateKey.pem
-
+    node keys/generateKeys.js
 ```
-
-### Create your public key for above private key
-```
-openssl pkey -in privateKey.pem -out publicKey.pem -pubout
-```
+keys will be written to private.pem file & public.pem file respectively

@@ -13,7 +13,7 @@ signer.write(doc);
 signer.end();
 
 // Returns the signature in output_format which can be 'binary', 'hex' or 'base64'
-const signature = signer.sign(private_key, 'base64')
+const signature = signer.sign({key: private_key, passphrase: 'secret to encode/decode generated key before use'}, 'base64')
 
 console.log('Digital Signature: ', signature);
 
